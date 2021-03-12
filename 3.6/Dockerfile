@@ -58,7 +58,7 @@ RUN true \
     && echo "listen_addresses='*'" >> /etc/postgresql/12/main/postgresql.conf
 
 # Osmium install to run continuous updates.
-RUN pip3 install osmium
+RUN pip3 install osmium awscli
 
 # Nominatim install.
 ENV NOMINATIM_VERSION v3.6.0
